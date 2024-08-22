@@ -2,6 +2,10 @@
   "expo": {
     "name": "easybulgaria",
     "slug": "easybulgaria",
+    "privacy": "public",
+    "description": "easy display of bulgaria hotels,restaurants,ratings and etc",
+    "owner": "acinarret",
+    "githubUrl": "https://github.com/SimeonNedyalkov",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +17,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.acinarret.easybulgaria"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.acinarret.easybulgaria"
     },
     "web": {
       "bundler": "metro",
@@ -40,6 +46,11 @@
         "projectId": "b6ff4a0a-be8a-4b13-8fd7-552ce52ccad2"
       }
     },
-    "owner": "acinarret"
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/b6ff4a0a-be8a-4b13-8fd7-552ce52ccad2"
+    }
   }
 }
