@@ -3,7 +3,7 @@ import { StyleSheet, Image, Platform, SafeAreaView, Text } from 'react-native';
 export default function TabTwoScreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text >
+      <Text style={styles.text}>
         Hello
       </Text>
     </SafeAreaView>
@@ -18,6 +18,9 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     gap: 8,
     zIndex:100,
-    color:'blue'
+    color:'#fff'
   },
+  text:{
+    color:"red"
+  }
 });
