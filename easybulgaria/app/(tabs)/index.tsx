@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, SafeAreaView, Text, Button } from 'react-native';
+import { Image, StyleSheet, Platform, SafeAreaView,StatusBar, Text, Button, } from 'react-native';
 
 export default function HomeScreen() {
   return (
@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent:'center',
     gap: 90,
-    color:'red'
+    color:'red',
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight:0
   },
   background:{
     width:300,
