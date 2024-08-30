@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, SafeAreaView, Text } from 'react-native';
+import { Image, StyleSheet, Platform, SafeAreaView, Text, Button } from 'react-native';
 
 export default function HomeScreen() {
   return (
@@ -7,7 +7,9 @@ export default function HomeScreen() {
       Hello Lene
       </Text>
       <Image source={require('../../assets/images/0955556f6a7758813966092a6f561c08.jpg')} style={styles.background}></Image>
-      
+      <Button title='Click Me' onPress={()=>{
+        alert('Button Clicked')
+      }}/>
     </SafeAreaView>
   );
 }
